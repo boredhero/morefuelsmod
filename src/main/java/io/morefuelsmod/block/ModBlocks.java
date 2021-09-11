@@ -14,18 +14,18 @@ import net.minecraftforge.registries.ForgeRegistries;
 import io.morefuelsmod.common.Defines;
 
 public final class ModBlocks {
-	
-	public static final DeferredRegister<Block> BLOCKS = new DeferredRegister<>(ForgeRegistries.BLOCKS, Defines.MODID);
+
+	public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, Defines.MODID);
 	
 	private static final Set<RegistryObject<Block>> PURE_BLOCKS = new java.util.HashSet<>();
 	
 	//public static final RegistryObject<Block> BARREL = register("barrel", () -> new BarrelBlock(Block.Properties.create(Material.WOOD, MaterialColor.WOOD).hardnessAndResistance(2.5F, 2.5F)));
-	public static final RegistryObject<Block> BLOCK_COKE = register("block_coke", () -> new BasicBlock(Block.Properties.create(Material.ROCK, MaterialColor.STONE).hardnessAndResistance(2.0F, 2.0F).sound(SoundType.STONE)));
-	public static final RegistryObject<Block> BLOCK_BITUMINOUS_COAL = register("block_bituminous_coal", () -> new BasicBlock(Block.Properties.create(Material.ROCK, MaterialColor.STONE).hardnessAndResistance(2.0F, 2.0F).sound(SoundType.STONE)));
-	public static final RegistryObject<Block> BLOCK_CREATIVE_INFINITE_FUEL = register("block_creative_infinite_fuel", () -> new BasicBlock(Block.Properties.create(Material.ROCK, MaterialColor.RED).hardnessAndResistance(3.0F, 5.0F).sound(SoundType.METAL)));
-	public static final RegistryObject<Block> BLOCK_LAVA_ORE = register("block_lava_ore", () -> new BasicBlock(Block.Properties.create(Material.ROCK, MaterialColor.STONE).hardnessAndResistance(2.0F, 2.0F).sound(SoundType.STONE)));
-	public static final RegistryObject<Block> BLOCK_BITUMINOUS_COAL_ORE = register("block_bituminous_coal_ore", () -> new BasicBlock(Block.Properties.create(Material.ROCK, MaterialColor.STONE).hardnessAndResistance(2.0F, 2.0F).sound(SoundType.STONE)));
-	public static final RegistryObject<Block> BLOCK_DRIED_PLANT = register("block_dried_plant", () -> new BasicBlock(Block.Properties.create(Material.PLANTS, MaterialColor.GRASS).hardnessAndResistance(2.0F, 2.0F).sound(SoundType.PLANT)));
+	public static final RegistryObject<Block> BLOCK_COKE = register("block_coke", () -> new BasicBlock(Block.Properties.of(Material.STONE, MaterialColor.STONE).strength(2.0F, 2.0F).sound(SoundType.STONE)));
+	public static final RegistryObject<Block> BLOCK_BITUMINOUS_COAL = register("block_bituminous_coal", () -> new BasicBlock(Block.Properties.of(Material.STONE, MaterialColor.STONE).strength(2.0F, 2.0F).sound(SoundType.STONE)));
+	public static final RegistryObject<Block> BLOCK_CREATIVE_INFINITE_FUEL = register("block_creative_infinite_fuel", () -> new BasicBlock(Block.Properties.of(Material.STONE, MaterialColor.COLOR_RED).strength(3.0F, 5.0F).sound(SoundType.METAL)));
+	public static final RegistryObject<Block> BLOCK_LAVA_ORE = register("block_lava_ore", () -> new BasicBlock(Block.Properties.of(Material.STONE, MaterialColor.STONE).strength(2.0F, 2.0F).sound(SoundType.STONE)));
+	public static final RegistryObject<Block> BLOCK_BITUMINOUS_COAL_ORE = register("block_bituminous_coal_ore", () -> new BasicBlock(Block.Properties.of(Material.STONE, MaterialColor.STONE).strength(2.0F, 2.0F).sound(SoundType.STONE)));
+	public static final RegistryObject<Block> BLOCK_DRIED_PLANT = register("block_dried_plant", () -> new BasicBlock(Block.Properties.of(Material.PLANT, MaterialColor.GRASS).strength(2.0F, 2.0F).sound(SoundType.CROP)));
 	
 	/**
 	 * @return {@code true} if the given {@code Block} requires an associated {@code BlockItem}.
