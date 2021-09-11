@@ -9,7 +9,7 @@ import io.morefuelsmod.common.Defines;
 
 public final class ModItems {
 
-	public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, Defines.MODID);
+	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Defines.MODID);
 
     public static final RegistryObject<Item> COKE = ITEMS.register("coke", () -> new Item(ModItemGroup.PROPERTIES));
     public static final RegistryObject<Item> BITUMINOUS_COAL = ITEMS.register("bituminous_coal", () -> new Item(ModItemGroup.PROPERTIES));
