@@ -21,7 +21,7 @@ public class ModItemGroup extends ItemGroup {
 	/** Main item group for this mod used for all items */
 	public static final ItemGroup MAIN = new ModItemGroup(Defines.MODID, () -> new ItemStack(ModItems.COKE.get()));
 
-	public static final Item.Properties PROPERTIES = new Item.Properties().group(ModItemGroup.MAIN);
+	public static final Item.Properties PROPERTIES = new Item.Properties().tab(ModItemGroup.MAIN);
 
 	/**
 	 * Here we use a {@link java.util.function.Supplier Supplier} because need to delay
@@ -40,7 +40,7 @@ public class ModItemGroup extends ItemGroup {
 	}
 
 	@Override
-	public ItemStack createIcon() {
+	public ItemStack makeIcon() {
 		return iconSupplier.get();
 	}
 }
