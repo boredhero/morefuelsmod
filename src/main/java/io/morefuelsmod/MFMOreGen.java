@@ -19,10 +19,10 @@ public class MFMOreGen {
                     event.getGeneration(),
                     OreFeatureConfig.FillerBlockType.NATURAL_STONE,
                     ModBlocks.BLOCK_BITUMINOUS_COAL_ORE.get().getBlock().defaultBlockState(),
-                    4,
-                    1,
-                    128,
-                    30
+                    4, // Vein Size
+                    1, // Min height
+                    128, // Max Height
+                    30 // 'amount' - not 100% sure what this does, but i think it's similar to chunk frequency from 1.15.2 and before
             );
             generateOre(
                     event.getGeneration(),
