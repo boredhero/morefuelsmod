@@ -23,10 +23,10 @@ public class MFMConfig {
         COMMON_SPEC = specPair.getRight();
         COMMON = specPair.getLeft();
 	}
-	
-        public static boolean enableBituminousGeneration;
-        public static boolean enableLavaOreNetherGeneration;
-        public static boolean enableLavaOreOverworldGeneration;
+	    // DISABLED DUE TO NEW JSON ORE GEN SYSTEM
+        //public static boolean enableBituminousGeneration;
+        //public static boolean enableLavaOreNetherGeneration;
+        //public static boolean enableLavaOreOverworldGeneration;
         //Enable/Disable Vanilla Fuel Tweaks
         public static boolean enablePlanksTweak, enableSlabsTweak, enableMushroomBlockTweak, enableWoodSignTweak, enableWoodButtonTweak, enableWoodFenceTweak, 
         enableWoodStairsTweak, enableWoodTrapdoorTweak, enableWoodDoorTweak, enableBoatTweak, enableStickTweak, enableBowlTweak, enableCoalBlockTweak, enableScaffoldingTweak, 
@@ -55,9 +55,10 @@ public class MFMConfig {
 
 
         public static void bakeConfig() {
-                enableBituminousGeneration = COMMON.enableBituminousGeneration.get();
-                enableLavaOreNetherGeneration = COMMON.enableLavaOreNetherGeneration.get();
-                enableLavaOreOverworldGeneration = COMMON.enableLavaOreOverworldGeneration.get();
+                // DISABLED DUE TO NEW JSON ORE SYSTEM
+                //enableBituminousGeneration = COMMON.enableBituminousGeneration.get();
+                //enableLavaOreNetherGeneration = COMMON.enableLavaOreNetherGeneration.get();
+                //enableLavaOreOverworldGeneration = COMMON.enableLavaOreOverworldGeneration.get();
                 //Enable/Disable Vanilla Fuels Tweaks
                 enablePlanksTweak = COMMON.enablePlanksTweak.get(); enableSlabsTweak = COMMON.enableSlabsTweak.get(); enableMushroomBlockTweak = COMMON.enableMushroomBlockTweak.get();
                 enableWoodSignTweak = COMMON.enableWoodSignTweak.get(); enableWoodButtonTweak = COMMON.enableWoodButtonTweak.get(); enableWoodFenceTweak = COMMON.enableWoodFenceTweak.get();
@@ -109,10 +110,10 @@ public class MFMConfig {
         }
 	//Internal class
 	public static class Common{
-        
-        public final BooleanValue enableBituminousGeneration;
-        public final BooleanValue enableLavaOreNetherGeneration;
-        public final BooleanValue enableLavaOreOverworldGeneration;
+        // DISABLED DUE TO NEW JSON ORE GENERATION SYSTEM
+        //public final BooleanValue enableBituminousGeneration;
+        //public final BooleanValue enableLavaOreNetherGeneration;
+        //public final BooleanValue enableLavaOreOverworldGeneration;
         //Enable/Disable Vanilla Fuel Tweaks
         public final BooleanValue enablePlanksTweak, enableSlabsTweak, enableMushroomBlockTweak, enableWoodSignTweak, enableWoodButtonTweak, enableWoodFenceTweak, 
         enableWoodStairsTweak, enableWoodTrapdoorTweak, enableWoodDoorTweak, enableBoatTweak, enableStickTweak, enableBowlTweak, enableCoalBlockTweak, enableScaffoldingTweak, 
@@ -141,8 +142,9 @@ public class MFMConfig {
 
         public Common(Builder builder) {
                 builder.push("General");
-        	
-                enableBituminousGeneration = builder
+
+                // DISABLED DUE TO NEW JSON ORE GENERATION SYSTEM
+                /*enableBituminousGeneration = builder
                         .comment("Enable Bituminous Coal Ore Generation:")
                         .translation(Defines.MODID + ".config." + "enableBituminousGeneration")
                         .define("enableBituminousGeneration", true);
@@ -155,7 +157,7 @@ public class MFMConfig {
                 enableLavaOreOverworldGeneration = builder
             		.comment("Enable Lava Ore Generation in the Overworld:")
             		.translation(Defines.MODID + ".config." + "enableLavaOreOverworldGeneration")
-                        .define("enableLavaOreOverworldGeneration", true);
+                        .define("enableLavaOreOverworldGeneration", true);*/
         
 
                 enablePlanksTweak = builder.comment("\nEnable/Disable Fuel Tweaks - Revert my Math back to Mojangs if set to false").translation(Defines.MODID + ".config." + "enablePlanksTweak").define("enablePlanksTweak", true);
