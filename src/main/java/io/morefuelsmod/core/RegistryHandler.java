@@ -35,7 +35,7 @@ public class RegistryHandler {
 		ModBlocks.BLOCKS.getEntries().stream().map(RegistryObject::get)
 				.filter(ModBlocks::needsItemBlock).forEach(block -> {
 
-					final Item.Properties properties = new Item.Properties().group(ModItemGroup.MAIN);
+					final Item.Properties properties = new Item.Properties().tab(ModItemGroup.MAIN);
 					final BlockItem blockItem = new BlockItem(block, properties);
 					blockItem.setRegistryName(Objects.requireNonNull(block.getRegistryName()));
 					registry.register(blockItem);
