@@ -84,7 +84,7 @@ public class MFMFuelsEventHandler {
 		//Maps Container
 		List<Item> mapsList = Arrays.asList(Items.FILLED_MAP, Items.MAP);
 		//Banner Pattern Container
-		List<Item> bannerPatternList = Arrays.asList(Items.CREEPER_BANNER_PATTERN, Items.FLOWER_BANNER_PATTERN, Items.GLOBE_BANNER_PATTERN,
+		List<Item> bannerPatternList = Arrays.asList(Items.CREEPER_BANNER_PATTERN, Items.FLOWER_BANNER_PATTERN, Items.PIGLIN_BANNER_PATTERN,
 				Items.MOJANG_BANNER_PATTERN, Items.SKULL_BANNER_PATTERN);
 		//First off, lets fix Mojang's own shit for them...
 		//All timings are in ticks. 20t = 1 second. See fuels.md for mor details.
