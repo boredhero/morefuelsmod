@@ -1,5 +1,6 @@
 package io.morefuelsmod;
 
+import net.minecraftforge.eventbus.api.EventPriority;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -42,7 +43,7 @@ public class MoreFuelsMod {
         MFMConfig.bakeConfig();
         LOGGER.info("MFM: Configs are baked like its 4/20");
         LOGGER.info("MFM: Lets Load some F*****G ores");
-        MFMOreGen.setupOreGenPart1();
+        MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, MFMOreGen::generateOres);
         LOGGER.info("MFM: F*****G ores loaded");
     }
 
