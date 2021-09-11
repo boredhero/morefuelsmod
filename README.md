@@ -93,6 +93,7 @@ This is the active developemnt repo for MoreFuelsMod for Minecraft 1.12.2 and On
 * GUI Config
 * Allow RFtL disable from config.
 * Investigate supporting Forge 1.14.2 and 1.14.3 as one jar
+* Investigate support Forge 1.16.x as one jar (likely not possible due to the different ore generation issues)
   * This may be a little more complicated now because of the mods.toml format. Not sure if it'll allow this at all.
 * Make chorus and purpur flammable using rEfLeCtIoN (or Block Properties??)
 * Add scrap metal
