@@ -2,7 +2,7 @@
 
 # morefuelsmod
 
-## branch - 1.16.5
+## branch - 1.17.1
 
 This is the active developemnt repo for MoreFuelsMod for Minecraft 1.12.2 and Onwards
 
