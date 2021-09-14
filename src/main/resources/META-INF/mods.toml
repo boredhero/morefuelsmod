@@ -1,6 +1,6 @@
 modLoader="javafml"
 license="GPLv3"
-loaderVersion="[36,)"
+loaderVersion="[37,)"
 [[mods]]
 issueTrackerURL="https://github.com/boredhero/morefuelsmod/issues"
 modId="morefuelsmod"
