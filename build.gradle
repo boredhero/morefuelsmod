@@ -6,7 +6,7 @@ plugins {
 }
 
 version = '1.21.4-1.7.1'
-group = io.morefuelsmod
+group = 'io.morefuelsmod'
 
 base {
     archivesName = mod_id
