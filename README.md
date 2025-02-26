@@ -2,7 +2,7 @@
 
 # morefuelsmod
 
-## branch - 1.16.5
+## branch - 1.20.1
 
 This is the active developemnt repo for MoreFuelsMod for Minecraft 1.12.2 and Onwards
 
@@ -19,8 +19,7 @@ This is the active developemnt repo for MoreFuelsMod for Minecraft 1.12.2 and On
 #### Dependencies
 
 * Eclipse for Java Developers
-* JDK 8 (preferred), 9, or 10+
-  * Linux users of the world, yes, OpenJDK is just fine.
+* JDK 21+
   * **Special Note:** 1.12.x and below versions will most likely only work with Java 8!
 * git command line tools (preferred) OR GUI git client
 
@@ -30,7 +29,7 @@ This is the active developemnt repo for MoreFuelsMod for Minecraft 1.12.2 and On
 * run command: ```git clone https://github.com/boredhero/morefuelsmod```
 * ```cd``` into morefuelsmod folder
 * ```git checkout {branchNameHere}```
-  * We have five branches: ```1.16.5```, ```1.15.2```, ```1.14.4```, ```1.13.2```, and ```1.12.x```
+  * We have six branches: ```1.20.1```, ```1.16.5```, ```1.15.2```, ```1.14.4```, ```1.13.2```, and ```1.12.x```
 * run ```chmod +x gradlew``` if using Linux or Mac
 
 #### VSCode/Code-OSS
